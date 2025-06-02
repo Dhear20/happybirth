@@ -1272,11 +1272,11 @@ audio {
 	display: none;
 }
 .message p {
-	font-family: 'Signika', sans-serif;
+	font-family: 'Patrick Hand', sans-serif;
 	font-size: 30px;
 	text-transform: uppercase;
 	color: #3B3B1A;
-	text-shadow: 2px 2px 2px #3B3B1A;
+	text-shadow: 2px 2px 2px #f5f5c9;
 	display: none;
 	font-weight: bold;
 }
