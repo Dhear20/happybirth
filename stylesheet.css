@@ -1335,6 +1335,37 @@ audio {
   opacity: 1;
 }
 
+.tiupLilinButton {
+  display: block;
+  margin: 40px auto;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ff6699;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.tiupLilinButton:hover {
+  background-color: #e05588;
+}
+
+.overlayHitam {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+  z-index: 999;
+}
 
 
     /*controlling tablet width*/

@@ -175,6 +175,8 @@
 					<button class="btn btn-outline-pink" id="light_candle"> Light Candle</button>
 					<button class="btn btn-outline-pink" id="wish_message">Happy Birthday</button>
 					<button class="btn btn-outline-pink" id="story">A mesage for you</button>
+					<button class="btn btn-outline-pink" id="tiupLilinButton">Tiup Lilin 🎂</button>
+
 					<!-- <button class="btn btn-primary" id="cake_cut">Lrt's Cut the Cake</button> -->
 				</div>
 			</div>
@@ -192,6 +194,8 @@
 
 
 	</div>
+	<div id="overlayHitam"></div>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -222,6 +226,16 @@
 
   showNextPhoto(); // tampilkan yang pertama
   setInterval(showNextPhoto, 4000); // ganti tiap 4 detik
+</script>
+
+<script>
+  const button = document.getElementById("tiupLilinButton");
+  const overlay = document.getElementById("overlayHitam");
+
+  button.addEventListener("click", () => {
+    overlay.style.opacity = "1";
+    overlay.style.pointerEvents = "auto";
+  });
 </script>
 
 </html>
