@@ -1300,28 +1300,12 @@ audio {
   margin: 0 auto;
 }
 
-.container-photo {
-  display: grid;
-  grid-template-columns: auto auto;
-  margin-top: 20px;
-  gap: 20px;
-}
+
 
 .image-text-wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-end; /* Pusatkan horizontal */
-  gap: 40px;
-  margin: 50px auto;
-  max-width: 800px;
-  padding: 0 20px;
-  flex-wrap: wrap;
-}
-
-.image-text-wrapper2 {
-  display: flex;
-  align-items: center;
-  justify-content:first baseline; /* Pusatkan horizontal */
   gap: 40px;
   margin: 50px auto;
   max-width: 800px;
