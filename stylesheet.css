@@ -12,7 +12,7 @@ body {
 	display: none;
 }
 .peach {
-	background-color: #FFDAB9;
+	background-color: #c9ecf9;
 	
 }
 .peach-after {
@@ -42,19 +42,19 @@ body {
 }
 @-moz-keyframes peach_alive {
 	0%{
-		background-color: #c9ecf9;
+		background-color: #70d2f9;
 	}
 	25%{
-		background-color: #bbe6f9;
+		background-color: #89d8f9;
 	}
 	50%{
 		background-color: #9cdef9;
 	}
 	75%{
-		background-color: #89d8f9;
+		background-color: #bbe6f9;
 	}
 	100%{
-		background-color: #70d2f9;
+		background-color: #c9ecf9;
 	}
 }
 
@@ -78,19 +78,19 @@ body {
 
 @-ms-keyframes peach_alive {
 	0%{
-		background-color: #c9ecf9;
+		background-color: #70d2f9;
 	}
 	25%{
-		background-color: #bbe6f9;
+		background-color: #89d8f9;
 	}
 	50%{
 		background-color: #9cdef9;
 	}
 	75%{
-		background-color: #89d8f9;
+		background-color: #bbe6f9;
 	}
 	100%{
-		background-color: #70d2f9;
+		background-color: #c9ecf9;
 	}
 }
 
