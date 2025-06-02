@@ -1336,7 +1336,7 @@ audio {
 }
 
 .tiupLilinButton {
-  display: block;
+  display: none;
   margin: 40px auto;
   padding: 12px 24px;
   font-size: 18px;
