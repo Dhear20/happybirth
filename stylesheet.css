@@ -1303,16 +1303,17 @@ audio {
 .image-text-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 30px;
-  margin: 40px auto;
-  max-width: 900px;
+  justify-content: center; /* Pusatkan horizontal */
+  gap: 40px;
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 0 20px;
   flex-wrap: wrap;
 }
 
 .photo-gallery {
-  width: 200px;
-  height: 250px;
+  width: 180px;
+  height: 220px;
   border-radius: 50% / 40%;
   overflow: hidden;
   position: relative;
