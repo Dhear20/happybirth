@@ -1275,7 +1275,7 @@ audio {
 	font-family: 'Signika', sans-serif;
 	font-size: 30px;
 	text-transform: uppercase;
-	color: #EBFFD8;
+	color: #3B3B1A;
 	text-shadow: 2px 2px 2px #3B3B1A;
 	display: none;
 	font-weight: bold;
@@ -1290,7 +1290,7 @@ audio {
 
 .btn-outline-pink:hover {
   background-color: #EBFFD8;
-  color: white;
+  color: #3B3B1A;
 }
 
 .bannar {
