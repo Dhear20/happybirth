@@ -58,7 +58,7 @@
     </div>
 
     <img src="border.png" width="100%" class="balloon-border">
-	
+ 
 
 	<div class="container">
 		
@@ -102,34 +102,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="row photo">
-			<div class="image-text-wrapper-left">
-				<div class="photo-gallery-left">
-					<img src="1.png" class="photo" />
-					<img src="2.png" class="photo" />
-					<img src="3.png" class="photo" />
-					<img src="4.png" class="photo" />
-					<img src="5.png" class="photo" />
-					<img src="6.png" class="photo" />
-					<img src="7.png" class="photo" />
-					<img src="8.png" class="photo" />
-					<img src="9.png" class="photo" />
-				</div>
-			</div>
-			<div class="image-text-wrapper-right">
-				<div class="photo-gallery-right">
-					<img src="a.png" class="photo" />
-					<img src="b.png" class="photo" />
-					<img src="c.png" class="photo" />
-					<img src="d.png" class="photo" />
-					<img src="e.png" class="photo" />
-					<img src="f.png" class="photo" />
-					<img src="g.png" class="photo" />
-					<img src="h.png" class="photo" />
-					<img src="i.png" class="photo" />
-				</div>
-			</div>
-		</div>
 		<div class="row message">
 			<div class="col-md-12">
 				<p>Hari ini adalah...</p>
@@ -148,7 +120,19 @@
 				
 				
 			</div>
-			
+			<div class="image-text-wrapper">
+				<div class="photo-gallery">
+					<img src="1.png" class="photo" />
+					<img src="2.png" class="photo" />
+					<img src="3.png" class="photo" />
+					<img src="4.png" class="photo" />
+					<img src="5.png" class="photo" />
+					<img src="6.png" class="photo" />
+					<img src="7.png" class="photo" />
+					<img src="8.png" class="photo" />
+					<img src="9.png" class="photo" />
+				</div>
+			</div>
 		</div>
 		<div class="navbar navbar-fixed-bottom">
 			<div class="row">
@@ -188,37 +172,20 @@
 </script>
 
 <script>
-        // Fungsi untuk galeri kiri
-        const leftPhotos = document.querySelectorAll('.photo-gallery-left .photo');
-        let leftCurrent = 0;
-        
-        function showNextLeftPhoto() {
-            leftPhotos.forEach((img, index) => {
-                img.classList.remove('active');
-                if (index === leftCurrent) img.classList.add('active');
-            });
-            leftCurrent = (leftCurrent + 1) % leftPhotos.length;
-        }
-        
-        // Fungsi untuk galeri kanan
-        const rightPhotos = document.querySelectorAll('.photo-gallery-right .photo');
-        let rightCurrent = 0;
-        
-        function showNextRightPhoto() {
-            rightPhotos.forEach((img, index) => {
-                img.classList.remove('active');
-                if (index === rightCurrent) img.classList.add('active');
-            });
-            rightCurrent = (rightCurrent + 1) % rightPhotos.length;
-        }
-        
-        // Jalankan animasi
-        showNextLeftPhoto();
-        showNextRightPhoto();
-        
-        setInterval(showNextLeftPhoto, 4000);
-        setInterval(showNextRightPhoto, 4000);
-    </script>
+  const photos = document.querySelectorAll('.photo-gallery img');
+  let currentPhoto = 0;
+
+  function changePhoto() {
+    photos.forEach((img, index) => {
+      img.classList.remove('active');
+      if (index === currentPhoto) img.classList.add('active');
+    });
+    currentPhoto = (currentPhoto + 1) % photos.length;
+  }
+
+  changePhoto(); // awal
+  setInterval(changePhoto, 4000); // ganti tiap 4 detik
+</script>
 
 
 </html>
