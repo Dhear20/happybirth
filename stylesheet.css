@@ -1282,7 +1282,7 @@ audio {
 }
 
 .btn-outline-pink {
-  color: #EBFFD8;
+  color: #3B3B1A;
   border: 2px solid #3B3B1A;
   background-color: transparent;
   transition: background-color 0.3s, color 0.3s;
@@ -1303,7 +1303,7 @@ audio {
 .image-text-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center; /* Pusatkan horizontal */
+  justify-content: flex-end; /* Pusatkan horizontal */
   gap: 40px;
   margin: 50px auto;
   max-width: 800px;
