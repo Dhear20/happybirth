@@ -1303,7 +1303,18 @@ audio {
 .image-text-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center; /* Pusatkan horizontal */
+  justify-content: flex-end; /* Pusatkan horizontal */
+  gap: 40px;
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.image-text-wrapper2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Pusatkan horizontal */
   gap: 40px;
   margin: 50px auto;
   max-width: 800px;
