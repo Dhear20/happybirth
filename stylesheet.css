@@ -1311,43 +1311,19 @@ audio {
   flex-wrap: wrap;
 }
 
-.photo-gallery-left {
-  width: 180px;
-  height: 220px;
-  border-radius: 50% / 40%;
-  overflow: hidden;
-  position: relative;
-  flex-shrink: 0;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  left: 10%;
-}
-
-.photo-gallery-left .photo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50% / 40%;
-  opacity: 0;
-  transition: opacity 1.5s ease-in-out;
-}
-
-.photo-gallery-left .photo.active {
-  opacity: 1;
-}
-
+.photo-gallery-left, 
 .photo-gallery-right {
-  width: 180px;
-  height: 220px;
-  border-radius: 50% / 40%;
-  overflow: hidden;
-  position: relative;
-  flex-shrink: 0;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  right: 10%;
+	width: 250px;
+	height: 350px;
+	border-radius: 20px;
+	overflow: hidden;
+	border: 8px solid #ff6b8b;
+	box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
+	position: relative;
+	flex-shrink: 0;
 }
 
-.photo-gallery-right .photo {
+.photo {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1357,7 +1333,7 @@ audio {
   transition: opacity 1.5s ease-in-out;
 }
 
-.photo-gallery-right .photo.active {
+.photo.active {
   opacity: 1;
 }
 

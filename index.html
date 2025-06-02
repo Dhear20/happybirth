@@ -183,38 +183,37 @@
 </script>
 
 <script>
-  const photos = document.querySelectorAll('.photo-gallery-left .photo');
-  let current = 0;
-
-  function showNextPhoto() {
-    photos.forEach((img, index) => {
-      img.classList.remove('active');
-      if (index === current) img.classList.add('active');
-    });
-
-    current = (current + 1) % photos.length;
-  }
-
-  showNextPhoto(); // tampilkan yang pertama
-  setInterval(showNextPhoto, 4000); // ganti tiap 4 detik
-</script>
-
-<script>
-  const photos = document.querySelectorAll('.photo-gallery-right .photo');
-  let current = 0;
-
-  function showNextPhoto() {
-    photos.forEach((img, index) => {
-      img.classList.remove('active');
-      if (index === current) img.classList.add('active');
-    });
-
-    current = (current + 1) % photos.length;
-  }
-
-  showNextPhoto(); // tampilkan yang pertama
-  setInterval(showNextPhoto, 4000); // ganti tiap 4 detik
-</script>
+        // Fungsi untuk galeri kiri
+        const leftPhotos = document.querySelectorAll('.photo-gallery-left .photo');
+        let leftCurrent = 0;
+        
+        function showNextLeftPhoto() {
+            leftPhotos.forEach((img, index) => {
+                img.classList.remove('active');
+                if (index === leftCurrent) img.classList.add('active');
+            });
+            leftCurrent = (leftCurrent + 1) % leftPhotos.length;
+        }
+        
+        // Fungsi untuk galeri kanan
+        const rightPhotos = document.querySelectorAll('.photo-gallery-right .photo');
+        let rightCurrent = 0;
+        
+        function showNextRightPhoto() {
+            rightPhotos.forEach((img, index) => {
+                img.classList.remove('active');
+                if (index === rightCurrent) img.classList.add('active');
+            });
+            rightCurrent = (rightCurrent + 1) % rightPhotos.length;
+        }
+        
+        // Jalankan animasi
+        showNextLeftPhoto();
+        showNextRightPhoto();
+        
+        setInterval(showNextLeftPhoto, 4000);
+        setInterval(showNextRightPhoto, 4000);
+    </script>
 
 
 </html>
