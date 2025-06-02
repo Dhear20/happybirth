@@ -1300,50 +1300,44 @@ audio {
   margin: 0 auto;
 }
 
-.image-text-wrapper-left {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; /* Pusatkan horizontal */
-  gap: 40px;
-  margin: 50px auto;
-  max-width: 800px;
-  padding: 0 20px;
-  flex-wrap: wrap;
+.row.photo {
+  display: flex;                /* Membuat layout flexbox */
+  justify-content: space-between; /* Membuat jarak antara kiri-kanan */
+  align-items: center;          /* Pusatkan vertikal */
+  width: 100%;                 /* Lebar penuh */
+  gap: 20px;                   /* Jarak antara galeri kiri dan kanan */
+  padding: 0 20px;             /* Padding kiri-kanan */
+  box-sizing: border-box;      /* Include padding dalam width */
 }
+
+.image-text-wrapper-left,
 .image-text-wrapper-right {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* Pusatkan horizontal */
-  gap: 40px;
-  margin: 50px auto;
-  max-width: 800px;
-  padding: 0 20px;
-  flex-wrap: wrap;
+  flex: 1;                     /* Membagi ruang sama rata */
+  max-width: 45%;              /* Maksimal lebar 45% untuk masing-masing */
 }
 
-.photo-gallery-left, 
+.photo-gallery-left,
 .photo-gallery-right {
-	width: 250px;
-	height: 350px;
-	border-radius: 20px;
-	overflow: hidden;
-	box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
-	position: relative;
-	flex-shrink: 0;
+  display: flex;               /* Flexbox untuk galeri foto */
+  flex-wrap: wrap;             /* Membungkus foto jika tidak cukup ruang */
+  gap: 10px;                   /* Jarak antar foto */
+  justify-content: center;     /* Pusatkan foto horizontal */
 }
 
-.photo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50% / 40%;
-  opacity: 0;
-  transition: opacity 1.5s ease-in-out;
+.photo-gallery-left .photo,
+.photo-gallery-right .photo {
+  width: 100px;                /* Ukuran foto */
+  height: 100px;
+  object-fit: cover;           /* Pastikan foto terisi proporsional */
+  border-radius: 10px;         /* Sudut melengkung */
+  border: 3px solid #ff6b8b;   /* Bingkai pink */
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2); /* Efek bayangan */
+  transition: transform 0.3s;  /* Animasi saat hover */
 }
 
-.photo.active {
-  opacity: 1;
+.photo-gallery-left .photo:hover,
+.photo-gallery-right .photo:hover {
+  transform: scale(1.05);      /* Membesar saat dihover */
 }
 
 
