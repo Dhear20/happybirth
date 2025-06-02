@@ -1319,7 +1319,7 @@ audio {
   position: relative;
   flex-shrink: 0;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  left: 5%;
+  left: 10%;
 }
 
 .photo-gallery-left .photo {
@@ -1344,7 +1344,7 @@ audio {
   position: relative;
   flex-shrink: 0;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  right: 5%;
+  right: 10%;
 }
 
 .photo-gallery-right .photo {

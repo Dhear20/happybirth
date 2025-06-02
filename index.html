@@ -183,7 +183,7 @@
 </script>
 
 <script>
-  const photos = document.querySelectorAll('.photo-gallery .photo');
+  const photos = document.querySelectorAll('.photo-gallery-left .photo');
   let current = 0;
 
   function showNextPhoto() {
@@ -199,6 +199,22 @@
   setInterval(showNextPhoto, 4000); // ganti tiap 4 detik
 </script>
 
+<script>
+  const photos = document.querySelectorAll('.photo-gallery-right .photo');
+  let current = 0;
+
+  function showNextPhoto() {
+    photos.forEach((img, index) => {
+      img.classList.remove('active');
+      if (index === current) img.classList.add('active');
+    });
+
+    current = (current + 1) % photos.length;
+  }
+
+  showNextPhoto(); // tampilkan yang pertama
+  setInterval(showNextPhoto, 4000); // ganti tiap 4 detik
+</script>
 
 
 </html>
