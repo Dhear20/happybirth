@@ -1335,7 +1335,15 @@ audio {
   opacity: 1;
 }
 
+ .left-photo {
+            left: 5%; /* Jarak dari sisi kiri layar, sesuaikan sesuai keinginan */
+            /* Contoh lain: left: 50px; */
+        }
 
+.right-photo {
+	right: 5%; /* Jarak dari sisi kanan layar, sesuaikan sesuai keinginan */
+	/* Contoh lain: right: 50px; */
+}
 
     /*controlling tablet width*/
     /*@media only screen and (max-width: 720px){
