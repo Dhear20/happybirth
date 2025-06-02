@@ -12,7 +12,7 @@ body {
 	display: none;
 }
 .peach {
-	background-color: #FFF2EB;
+	background-color: #C4E1E6;
 	
 }
 .peach-after {
@@ -25,90 +25,90 @@ body {
 
 @-webkit-keyframes peach_alive {
 	0%{
-		background-color: #FFF2EB;
+		background-color: #C4E1E6;
 	}
 	25%{
-		background-color: #FFDCDC;
+		background-color: #A4CCD9;
 	}
 	50%{
-		background-color: #FFC6C6;
+		background-color: #8DBCC7;
 	}
 	75%{
-		background-color: #FFDCDC;
+		background-color: #A4CCD9;
 	}
 	100%{
-		background-color: #FFF2EB;
+		background-color: #C4E1E6;
 	}
 }
 @-moz-keyframes peach_alive {
 		0%{
-		background-color: #FFF2EB;
+		background-color: #C4E1E6;
 	}
 	25%{
-		background-color: #FFDCDC;
+		background-color: #A4CCD9;
 	}
 	50%{
-		background-color: #FFC6C6;
+		background-color: #8DBCC7;
 	}
 	75%{
-		background-color: #FFDCDC;
+		background-color: #A4CCD9;
 	}
 	100%{
-		background-color: #FFF2EB;
+		background-color: #C4E1E6;
 	}
 }
 
 @-o-keyframes peach_alive {
 		0%{
-		background-color: #FFF2EB;
+		background-color: #C4E1E6;
 	}
 	25%{
-		background-color: #FFDCDC;
+		background-color: #A4CCD9;
 	}
 	50%{
-		background-color: #FFC6C6;
+		background-color: #8DBCC7;
 	}
 	75%{
-		background-color: #FFDCDC;
+		background-color: #A4CCD9;
 	}
 	100%{
-		background-color: #FFF2EB;
+		background-color: #C4E1E6;
 	}
 }
 
 @-ms-keyframes peach_alive {
 		0%{
-		background-color: #FFF2EB;
+		background-color: #C4E1E6;
 	}
 	25%{
-		background-color: #FFDCDC;
+		background-color: #A4CCD9;
 	}
 	50%{
-		background-color: #FFC6C6;
+		background-color: #8DBCC7;
 	}
 	75%{
-		background-color: #FFDCDC;
+		background-color: #A4CCD9;
 	}
 	100%{
-		background-color: #FFF2EB;
+		background-color: #C4E1E6;
 	}
 }
 
 @keyframes peach_alive {
 		0%{
-		background-color: #FFF2EB;
+		background-color: #C4E1E6;
 	}
 	25%{
-		background-color: #FFDCDC;
+		background-color: #A4CCD9;
 	}
 	50%{
-		background-color: #FFC6C6;
+		background-color: #8DBCC7;
 	}
 	75%{
-		background-color: #FFDCDC;
+		background-color: #A4CCD9;
 	}
 	100%{
-		background-color: #FFF2EB;
+		background-color: #C4E1E6;
 	}
 }
 
@@ -1275,21 +1275,21 @@ audio {
 	font-family: 'Signika', sans-serif;
 	font-size: 30px;
 	text-transform: uppercase;
-	color: #644A07;
-	text-shadow: 2px 2px 2px #FFF;
+	color: #EBFFD8;
+	text-shadow: 2px 2px 2px #3B3B1A;
 	display: none;
 	font-weight: bold;
 }
 
 .btn-outline-pink {
-  color: #644A07;
-  border: 2px solid #594100;
+  color: #EBFFD8;
+  border: 2px solid #3B3B1A;
   background-color: transparent;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .btn-outline-pink:hover {
-  background-color: #644A07;
+  background-color: #EBFFD8;
   color: white;
 }
 
@@ -1309,6 +1309,7 @@ audio {
   max-width: 800px;
   padding: 0 20px;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 
