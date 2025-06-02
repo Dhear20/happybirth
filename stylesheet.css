@@ -1314,7 +1314,7 @@ audio {
 .image-text-wrapper2 {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Pusatkan horizontal */
+  justify-content:first baseline; /* Pusatkan horizontal */
   gap: 40px;
   margin: 50px auto;
   max-width: 800px;
