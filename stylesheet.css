@@ -1300,10 +1300,20 @@ audio {
   margin: 0 auto;
 }
 
-.image-text-wrapper {
+.image-text-wrapper-left {
   display: flex;
   align-items: center;
-  justify-content:center; /* Pusatkan horizontal */
+  justify-content: flex-end; /* Pusatkan horizontal */
+  gap: 40px;
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+.image-text-wrapper-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Pusatkan horizontal */
   gap: 40px;
   margin: 50px auto;
   max-width: 800px;
@@ -1317,7 +1327,6 @@ audio {
 	height: 350px;
 	border-radius: 20px;
 	overflow: hidden;
-	border: 8px solid #ff6b8b;
 	box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
 	position: relative;
 	flex-shrink: 0;
